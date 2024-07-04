@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border: solid thin;
+  width: 350px;
+}
+
+.container > div {
+  height: 50px;
+  display: flex;
+}
+
+#display {
+  font-size: 40px;
+}
+
+.container > div > button {
+  width: 25%;
+  height: 100%;
+}
+
+.container > div:nth-child(2) > button:first-child {
+  flex-grow: 2;
+}
+
+.container > div:last-child > button:first-child {
+  flex-grow: 1;
+}
+
+
